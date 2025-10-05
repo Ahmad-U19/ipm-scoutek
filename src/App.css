@@ -370,3 +370,200 @@ img{
   padding: 10px 0;
   font-size: 0.9rem;
 }
+
+@media (max-width: 1200px) {
+  #Navbar {
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .navigations {
+    margin-left: 15%;
+  }
+
+  .main-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .text {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+  }
+
+  .store-buttons img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  #Navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navigations {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navigations a {
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .main-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .playstore {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .play {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .store-buttons {
+    position: static;
+    margin-top: 20px;
+    left: auto;
+    top: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .why-IPM h1 {
+    font-size: 2.5rem;
+  }
+
+  .how-it-works h1 {
+    font-size: 2.5rem;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+/* 📌 Mobile Screens (≤ 600px) */
+@media (max-width: 600px) {
+  #Navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .navigations {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navigations a {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .main-text {
+    top: 10%;
+  }
+
+  .main-text h1 {
+    font-size: 2rem;
+  }
+
+  .demo-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .play {
+    width: 90%;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .store-buttons img {
+    width: 160px;
+  }
+
+  .why-IPM h1 {
+    font-size: 2rem;
+  }
+
+  .why-IPM h3 {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    font-size: 1rem;
+    height: auto;
+  }
+
+  .how-it-works h1 {
+    font-size: 2rem;
+  }
+
+  .how-it-works h3 {
+    font-size: 1rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .footer-logo img {
+    width: 140px;
+  }
+
+  .footer-column h3 {
+    font-size: 1rem;
+  }
+
+  .footer-column a {
+    font-size: 0.9rem;
+  }
+
+  .footerPara {
+    font-size: 0.8rem;
+  }
+}

@@ -11,17 +11,17 @@ function App() {
   return (
     <div>
       <div id="Navbar">
-        <a href="/">
+        <a href="#">
           <img className="logo" src={img} alt="" />
         </a>
 
         <div className="navigations">
-          <a href="/">Home</a>
-          <a href="/">Features</a>
-          <a href="/">About Us</a>
-          <a href="/">Pest Library</a>
-          <a href="/">Blog</a>
-          <a href="/">Contact us</a>
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">About Us</a>
+          <a href="#">Pest Library</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact us</a>
         </div>
         <button id="quote">Request Demo</button>
       </div>
@@ -90,7 +90,7 @@ function App() {
       </div>
 
       <footer className="footer">
-        <a href="/">
+        <a href="#">
           <img src={footerlogo} alt="" />
         </a>
         <div className="footer-container">
@@ -109,18 +109,18 @@ function App() {
             {/* Resources */}
             <div className="footer-column">
               <h3>Resources</h3>
-              <p><a href="/">FAQ</a></p>
-              <p><a href="/">Features</a></p>
-              <p><a href="/">News</a></p>
+              <p><a href="#">FAQ</a></p>
+              <p><a href="#">Features</a></p>
+              <p><a href="#">News</a></p>
             </div>
 
             {/* Information */}
             <div className="footer-column">
               <h3>Information</h3>
-              <p><a href="/">About Us</a></p>
-              <p><a href="/">Terms of Use</a></p>
-              <p><a href="/">Privacy Policy</a></p>
-              <p><a href="/">Accessibility Statement</a></p>
+              <p><a href="#">About Us</a></p>
+              <p><a href="#">Terms of Use</a></p>
+              <p><a href="#">Privacy Policy</a></p>
+              <p><a href="#">Accessibility Statement</a></p>
             </div>
           </div>
         </div>

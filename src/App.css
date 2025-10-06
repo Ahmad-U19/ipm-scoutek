@@ -436,6 +436,10 @@
 
 /* 📱 Mobile (up to 600px) */
 @media (max-width: 600px) {
+  .navigations a::after {
+    bottom: -3px; /* keeps underline just below the word */
+    left: 0;
+  }
   /* Hero text */
   .main-img {
     height: auto;

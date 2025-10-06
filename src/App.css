@@ -18,25 +18,29 @@
   display: block;
 }
 
-.navigations {
+.navigations { 
   display: flex;
-  gap: 15px;
+  gap: 5px;
 }
 
 .navigations a {
+  justify-content: center;
+  align-items: center;
   position: relative;
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 16px;
-  padding-bottom: 5px;
+  margin: 0 10px;
+  display: inline-block; /* makes positioning consistent */
 }
 
 .navigations a::after {
   content: "";
   position: absolute;
+  font-weight: bold;
   left: 0;
-  bottom: 0;
+  bottom: 25px;  /* adjust closer or farther */
   width: 0;
   height: 2px;
   background: lightgreen;
@@ -46,6 +50,7 @@
 .navigations a:hover::after {
   width: 100%;
 }
+
 
 #Navbar button {
   background-color: lightgreen;
@@ -401,6 +406,31 @@
 
   .footer-links {
     justify-content: center;
+  }
+}
+
+/* Tablet (600px – 800px) */
+@media (min-width: 600px) and (max-width: 800px) {
+  .main-img img {
+    height: 100%;       /* let image cover full height */
+    min-height: 500px;  /* force taller image */
+    object-fit: cover;  /* ensures image stretches properly */
+  }
+
+  .main-text {
+    top: 25%;          /* shift text slightly lower */
+    transform: translateX(-50%);
+    padding: 0 20px;   /* prevent overflow from edges */
+  }
+
+  .main-text h1 {
+    font-size: 2.2rem;  /* reduce text size */
+    margin-bottom: 20px;
+  }
+
+  .demo-btn {
+    font-size: 1rem;
+    padding: 12px 24px;
   }
 }
 

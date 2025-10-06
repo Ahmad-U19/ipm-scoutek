@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/ipm-scoutek/static/css/main.74ecd158.css",
-    "main.js": "/ipm-scoutek/static/js/main.fa195cb5.js",
+    "main.js": "/ipm-scoutek/static/js/main.f1491650.js",
     "static/js/453.74915430.chunk.js": "/ipm-scoutek/static/js/453.74915430.chunk.js",
     "static/media/pexels-nc-farm-bureau-mark-2749165.jpg": "/ipm-scoutek/static/media/pexels-nc-farm-bureau-mark-2749165.bbe4185663afcaede58e.jpg",
     "static/media/NewPic.webp": "/ipm-scoutek/static/media/NewPic.ebb6b36ca8602639c2ad.webp",
+    "static/media/IPMScoutek-logo.svg": "/ipm-scoutek/static/media/IPMScoutek-logo.484742eb455c8bc58ce24fd67718dfe0.svg",
     "static/media/IPMScoutek-logo-white-480x97.webp": "/ipm-scoutek/static/media/IPMScoutek-logo-white-480x97.f672ffba41e45827e4e2.webp",
     "index.html": "/ipm-scoutek/index.html",
     "main.74ecd158.css.map": "/ipm-scoutek/static/css/main.74ecd158.css.map",
-    "main.fa195cb5.js.map": "/ipm-scoutek/static/js/main.fa195cb5.js.map",
+    "main.f1491650.js.map": "/ipm-scoutek/static/js/main.f1491650.js.map",
     "453.74915430.chunk.js.map": "/ipm-scoutek/static/js/453.74915430.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74ecd158.css",
-    "static/js/main.fa195cb5.js"
+    "static/js/main.f1491650.js"
   ]
 }

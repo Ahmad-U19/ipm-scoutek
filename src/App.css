@@ -24,23 +24,20 @@
 }
 
 .navigations a {
-  justify-content: center;
-  align-items: center;
   position: relative;
   text-decoration: none;
   color: black;
   font-weight: normal;
   font-size: 16px;
   margin: 0 10px;
-  display: inline-block; /* makes positioning consistent */
+  padding-bottom: 3px; /* keeps space for underline */
 }
 
 .navigations a::after {
   content: "";
   position: absolute;
-  font-weight: bold;
   left: 0;
-  bottom: 25px;  /* adjust closer or farther */
+  bottom: 25px;   /* 👈 push underline below text */
   width: 0;
   height: 2px;
   background: lightgreen;
@@ -437,10 +434,11 @@
 /* 📱 Mobile (up to 600px) */
 @media (max-width: 600px) {
   .navigations a::after {
-    bottom: -3px; /* keeps underline just below the word */
+    bottom: -3px;
     left: 0;
+    transition: width 0.3s ease;
   }
-  /* Hero text */
+
   .main-img {
     height: auto;
     position: relative;
@@ -500,4 +498,15 @@
   .footer-column a {
     font-size: 0.9rem;
   }
+
+  .footer-links {
+    flex-direction: column;  /* stack items vertically */
+    align-items: center;     /* center them */
+    gap: 30px;
+  }
+
+  /* Control order explicitly */
+  .footer-column:nth-child(1) { order: 1; } /* Contact */
+  .footer-column:nth-child(2) { order: 2; } /* Resources */
+  .footer-column:nth-child(3) { order: 3; } /* Information */
 }

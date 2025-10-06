@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from "../src/Data/download.png";
+import img from "../src/Data/IPMScoutek-logo.svg";
 import picture from "../src/Data/pexels-nc-farm-bureau-mark-2749165.jpg";
 import play from "../src/Data/NewPic.webp";
 import avail from "../src/Data/available.png";

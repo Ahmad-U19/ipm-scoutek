@@ -1,38 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../src/Data/download.png";
-import picture from "../src/Data/pexels-nc-farm-bureau-mark-2749165.jpg"
-import play from "../src/Data/NewPic.webp"
-import avail from "../src/Data/available.png"
-import app from "../src/Data/available.jpg"
-import footerlogo from "../src/Data/IPMScoutek-logo-white-480x97.webp"
+import picture from "../src/Data/pexels-nc-farm-bureau-mark-2749165.jpg";
+import play from "../src/Data/NewPic.webp";
+import avail from "../src/Data/available.png";
+import app from "../src/Data/available.jpg";
+import footerlogo from "../src/Data/IPMScoutek-logo-white-480x97.webp";
 import "./App.css";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div>
       <div id="Navbar">
         <a href="#">
-          <img className="logo" src={img} alt="" />
+          <img className="logo" src={img} alt="IPM Logo" />
         </a>
 
-        <div className="navigations">
+        {/* Hamburger */}
+        <div
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className={`navigations ${menuOpen ? "show" : ""}`}>
           <a href="#">Home</a>
           <a href="#">Features</a>
           <a href="#">About Us</a>
           <a href="#">Pest Library</a>
           <a href="#">Blog</a>
           <a href="#">Contact us</a>
+          <button id="quote">Request Demo</button>
         </div>
-        <button id="quote">Request Demo</button>
       </div>
+
+      {/* Hero Section */}
       <div className="main-img">
-        <img src={picture} alt="" />
+        <img src={picture} alt="Hero" />
         <div className="main-text">
-          <h1>Digital Scouting and Integrated Pest Management<br />for Greenhouses</h1>
+          <h1>
+            Digital Scouting and Integrated Pest Management
+            <br /> for Greenhouses
+          </h1>
           <button className="demo-btn">Request a Demo</button>
         </div>
       </div>
 
+      {/* Playstore Section */}
       <div className="playstore">
         <img className="play" src={play} alt="" />
 
@@ -46,13 +64,22 @@ function App() {
         </div>
       </div>
 
-      <div className ="why-IPM">
+      {/* Sections */}
+      <div className="why-IPM">
         <h1>Why IPM Scoutek</h1>
         <h3>Discover How IPM Scoutek Can Improve Your Crop Protection</h3>
         <div className="text">
-          <p>IPM Scoutek streamlines greenhouse pest management through innovative features like real-time scouting updates, action threshold alerts, and data that tracks the pest control from sprays and biological treatments.</p>
+          <p>
+            IPM Scoutek streamlines greenhouse pest management through innovative
+            features like real-time scouting updates, action threshold alerts, and
+            data that tracks the pest control from sprays and biological treatments.
+          </p>
           <br />
-          <p>Designed for ease of use and multilingual support, IPM Scoutek makes advanced pest management accessible worldwide. Discover how it can transform your operations for optimal pest control and crop protection.</p>
+          <p>
+            Designed for ease of use and multilingual support, IPM Scoutek makes
+            advanced pest management accessible worldwide. Discover how it can
+            transform your operations for optimal pest control and crop protection.
+          </p>
         </div>
       </div>
 
@@ -63,50 +90,68 @@ function App() {
         <div className="steps">
           <div className="step">
             <h2>1</h2>
-            <p><strong>Scout & Record</strong><br />Log pests and diseases using the mobile app.</p>
+            <p>
+              <strong>Scout & Record</strong>
+              <br />
+              Log pests and diseases using the mobile app.
+            </p>
           </div>
-
           <div className="step">
             <h2>2</h2>
-            <p><strong>Sync & Analyze</strong><br />Data instantly syncs to your dashboard with maps and charts.</p>
+            <p>
+              <strong>Sync & Analyze</strong>
+              <br />
+              Data instantly syncs to your dashboard with maps and charts.
+            </p>
           </div>
-
           <div className="step">
             <h2>3</h2>
-            <p><strong>Take Action</strong><br />Decide treatments based on thresholds and alerts.</p>
+            <p>
+              <strong>Take Action</strong>
+              <br />
+              Decide treatments based on thresholds and alerts.
+            </p>
           </div>
-
           <div className="step">
             <h2>4</h2>
-            <p><strong>Track Results</strong><br />Monitor outcomes and generate reports anytime.</p>
+            <p>
+              <strong>Track Results</strong>
+              <br />
+              Monitor outcomes and generate reports anytime.
+            </p>
           </div>
         </div>
       </div>
 
       <div className="cta-section">
         <h2>Ready to Improve Your Greenhouse IPM?</h2>
-        <p>Request a demo today and see how IPM Scoutek can transform your crop protection.</p>
+        <p>
+          Request a demo today and see how IPM Scoutek can transform your crop
+          protection.
+        </p>
         <button className="cta-btn">Request a Demo</button>
       </div>
 
+      {/* Footer */}
       <footer className="footer">
         <a href="#">
-          <img src={footerlogo} alt="" />
+          <img src={footerlogo} alt="Footer Logo" />
         </a>
         <div className="footer-container">
-          {/* Links Section */}
           <div className="footer-links">
-            {/* Contact */}
             <div className="footer-column">
               <h3>Contact</h3>
               <p><a href="tel:18664128883">1.866.412.8883</a></p>
               <p><a href="mailto:hello@ipmscoutek.com">hello@ipmscoutek.com</a></p>
-              <a href="https://www.linkedin.com/company/ipm-scoutek" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.linkedin.com/company/ipm-scoutek"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="social-icon">in</div>
               </a>
             </div>
 
-            {/* Resources */}
             <div className="footer-column">
               <h3>Resources</h3>
               <p><a href="#">FAQ</a></p>
@@ -114,7 +159,6 @@ function App() {
               <p><a href="#">News</a></p>
             </div>
 
-            {/* Information */}
             <div className="footer-column">
               <h3>Information</h3>
               <p><a href="#">About Us</a></p>
@@ -125,6 +169,7 @@ function App() {
           </div>
         </div>
       </footer>
+
       <div className="footerPara">
         <p>Copyright © 2025 IPM Scoutek 2730537 Ontario Inc.</p>
       </div>

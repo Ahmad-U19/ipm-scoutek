@@ -1,8 +1,7 @@
-/* ================= NAVBAR ================= */
 #Navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; /* ✅ Centers nav links and button vertically */
   padding: 10px 30px;
   height: 120px;
   box-sizing: border-box;
@@ -12,15 +11,17 @@
   position: relative;
 }
 
+
 .logo {
   width: 220px;
   height: auto;
   display: block;
 }
 
-.navigations { 
+.navigations {
   display: flex;
-  gap: 5px;
+  align-items: center;
+  gap: 10px;
 }
 
 .navigations a {
@@ -37,7 +38,7 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: 25px;   /* 👈 push underline below text */
+  bottom: -2px;   /* 👈 push underline below text */
   width: 0;
   height: 2px;
   background: lightgreen;

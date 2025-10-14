@@ -7,19 +7,26 @@ import avail from "../src/Data/available.png";
 import app from "../src/Data/available.jpg";
 import footerlogo from "../src/Data/IPMScoutek-logo-white-480x97.webp";
 import Feature from "../src/Components/Feature";
+import About from "../src/Components/About";
 import "./App.css";
 
-function HomePage({ onNavClick }) {
+function HomePage({ onNavClick, navigate }) {
   return (
     <>
+      {/* Hero Section */}
       <div className="main-img">
         <img src={picture} alt="Hero" />
         <div className="main-text">
           <h1>
-            Digital Scouting and Integrated Pest Management
+            Digital Scouting and Integrated Pest Management Software
             <br /> for Greenhouses
           </h1>
-          <button className="demo-btn">Request a Demo</button>
+          <button
+            className="demo-btn"
+            onClick={() => navigate("/contact")}
+          >
+            Request a Demo
+          </button>
         </div>
       </div>
 
@@ -46,7 +53,7 @@ function HomePage({ onNavClick }) {
         </div>
       </div>
 
-      {/* Why IPM */}
+      {/* Why IPM Section */}
       <div className="why-IPM">
         <h1>Why IPM Scoutek</h1>
         <h3>Discover How IPM Scoutek Can Improve Your Crop Protection</h3>
@@ -65,7 +72,7 @@ function HomePage({ onNavClick }) {
         </div>
       </div>
 
-      {/* How it Works */}
+      {/* How It Works Section */}
       <div className="how-it-works">
         <h1>How It Works</h1>
         <h3>4 Simple Steps to Smarter Greenhouse IPM</h3>
@@ -106,14 +113,19 @@ function HomePage({ onNavClick }) {
         </div>
       </div>
 
-      {/* CTA */}
+      {/* Call-to-Action Section */}
       <div className="cta-section">
         <h2>Ready to Improve Your Greenhouse IPM?</h2>
         <p>
           Request a demo today and see how IPM Scoutek can transform your crop
           protection.
         </p>
-        <button className="cta-btn">Request a Demo</button>
+        <button
+          className="cta-btn"
+          onClick={() => navigate("/contact")}
+        >
+          Request a Demo
+        </button>
       </div>
     </>
   );
@@ -122,7 +134,6 @@ function HomePage({ onNavClick }) {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [route, setRoute] = useState(() => {
-    // initial route from hash
     const hash = window.location.hash || "#/";
     return hash.replace(/^#/, "");
   });
@@ -130,18 +141,16 @@ function App() {
   useEffect(() => {
     const onHashChange = () => {
       setRoute((window.location.hash || "#/").replace(/^#/, ""));
-      setMenuOpen(false); // close menu on navigation
+      setMenuOpen(false);
     };
     window.addEventListener("hashchange", onHashChange);
     return () => window.removeEventListener("hashchange", onHashChange);
   }, []);
 
   const navigate = (path) => {
-    // path example: "/features" or "/"
     if (window.location.hash !== `#${path}`) {
       window.location.hash = path;
     } else {
-      // already there — still ensure menu closes
       setMenuOpen(false);
     }
   };
@@ -150,6 +159,7 @@ function App() {
 
   return (
     <div>
+      {/* Navbar */}
       <div id="Navbar">
         <a href="#/" onClick={() => navigate("/")}>
           <img className="logo" src={img} alt="IPM Logo" />
@@ -171,37 +181,26 @@ function App() {
           <a href="#/about" onClick={() => navigate("/about")}>About Us</a>
           <a href="#/pest-library" onClick={() => navigate("/pest-library")}>Pest Library</a>
           <a href="#/blog" onClick={() => navigate("/blog")}>Blog</a>
-          <a href="#/contact" onClick={() => navigate("/contact")}>Contact us</a>
-          <button id="quote" onClick={() => { navigate("/contact"); }}>Request Demo</button>
+          <button id="quote" onClick={() => navigate("/contact")}>
+            Request Demo
+          </button>
         </div>
       </div>
 
-      {/* Content area: route decides which component/section to show */}
+      {/* Routing */}
       <main>
         {route === "/features" ? (
           <Feature />
         ) : route === "/about" ? (
-          <div className="page about-page">
-            <h1>About Us</h1>
-            <p>Put your about-us content here.</p>
-          </div>
+          <About />
         ) : route === "/pest-library" ? (
-          <div className="page pest-library">
-            <h1>Pest Library</h1>
-            <p>Library content goes here.</p>
-          </div>
+          <div className="page pest-library"><h1>Pest Library</h1></div>
         ) : route === "/blog" ? (
-          <div className="page blog-page">
-            <h1>Blog</h1>
-            <p>Blog list goes here.</p>
-          </div>
+          <div className="page blog-page"><h1>Blog</h1></div>
         ) : route === "/contact" ? (
-          <div className="page contact-page">
-            <h1>Contact</h1>
-            <p>Contact details or a contact form.</p>
-          </div>
+          <div className="page contact-page"><h1>Contact</h1></div>
         ) : (
-          <HomePage onNavClick={onNavClick} />
+          <HomePage onNavClick={onNavClick} navigate={navigate} />
         )}
       </main>
 

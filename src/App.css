@@ -355,6 +355,14 @@
   .store-buttons img {
     width: 180px;
   }
+
+  .footerPara {
+  background-color: #025a1c;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: medium;
+  }
 }
 
 /* 📱 Tablet (up to 992px) */
@@ -505,7 +513,13 @@
     align-items: center;     /* center them */
     gap: 30px;
   }
-
+  .footerPara {
+    background-color: #025a1c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: small;
+  }
   /* Control order explicitly */
   .footer-column:nth-child(1) { order: 1; } /* Contact */
   .footer-column:nth-child(2) { order: 2; } /* Resources */

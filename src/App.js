@@ -72,47 +72,6 @@ function HomePage({ onNavClick, navigate }) {
         </div>
       </div>
 
-      {/* How It Works Section */}
-      <div className="how-it-works">
-        <h1>How It Works</h1>
-        <h3>4 Simple Steps to Smarter Greenhouse IPM</h3>
-
-        <div className="steps">
-          <div className="step">
-            <h2>1</h2>
-            <p>
-              <strong>Scout & Record</strong>
-              <br />
-              Log pests and diseases using the mobile app.
-            </p>
-          </div>
-          <div className="step">
-            <h2>2</h2>
-            <p>
-              <strong>Sync & Analyze</strong>
-              <br />
-              Data instantly syncs to your dashboard with maps and charts.
-            </p>
-          </div>
-          <div className="step">
-            <h2>3</h2>
-            <p>
-              <strong>Take Action</strong>
-              <br />
-              Decide treatments based on thresholds and alerts.
-            </p>
-          </div>
-          <div className="step">
-            <h2>4</h2>
-            <p>
-              <strong>Track Results</strong>
-              <br />
-              Monitor outcomes and generate reports anytime.
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* Call-to-Action Section */}
       <div className="cta-section">
         <h2>Ready to Improve Your Greenhouse IPM?</h2>

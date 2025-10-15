@@ -1,7 +1,7 @@
 import React from "react";
 import "../Components/Feature.css";
-import image1 from "../Data/460x0w.webp"
-import image2 from "../Data/nned.webp"
+import image1 from "../Data/626x0w.webp"
+import image2 from "../Data/2nd.webp"
 import image3 from "../Data/scouting.jpg"
 import image4 from "../Data/dashboard.jpg"
 import image5 from "../Data/heatMaps.jpg"

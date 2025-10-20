@@ -41,7 +41,7 @@ function Feature() {
 
         <div className="feature-card-2">
           <h2>Dashboard, Trends & Analytics</h2><br />
-          <p>The web dashboard visualizes pest population trends over time with easy-to-read charts.
+          <p>The App dashboard visualizes pest population trends over time with easy-to-read charts.
             Growers can compare pest pressure between zones or weeks to spot recurring patterns.
             It helps identify whether pest management actions are working effectively.
             Analytics tools support smarter and data-driven decisions.</p>

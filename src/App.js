@@ -137,8 +137,7 @@ function App() {
         <div className={`navigations ${menuOpen ? "show" : ""}`}>
           <a href="#/" onClick={() => navigate("/")}>Home</a>
           <a href="#/features" onClick={() => navigate("/features")}>Features</a>
-          <a href="#/about" onClick={() => navigate("/about")}>About Us</a>
-          <a href="#/pest-library" onClick={() => navigate("/pest-library")}>Pest Library</a>
+          <a href="#/about" onClick={() => navigate("/about")}>About</a>
           <a href="#/blog" onClick={() => navigate("/blog")}>Blog</a>
           <button id="quote" onClick={() => navigate("/contact")}>
             Request Demo
@@ -152,8 +151,6 @@ function App() {
           <Feature />
         ) : route === "/about" ? (
           <About />
-        ) : route === "/pest-library" ? (
-          <div className="page pest-library"><h1>Pest Library</h1></div>
         ) : route === "/blog" ? (
           <div className="page blog-page"><h1>Blog</h1></div>
         ) : route === "/contact" ? (
@@ -187,7 +184,7 @@ function App() {
               <h3>Resources</h3>
               <p><a href="#/faq" onClick={() => navigate("/faq")}>FAQ</a></p>
               <p><a href="#/features" onClick={() => navigate("/features")}>Features</a></p>
-              <p><a href="#/news" onClick={() => navigate("/news")}>News</a></p>
+              <p><a href="#/blog" onClick={() => navigate("/blog")}>News</a></p>
             </div>
 
             <div className="footer-column">

@@ -1,0 +1,169 @@
+/* 🌿 Base Container */
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f4fff5 0%, #ffffff 100%);
+  padding: 80px 10%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ✨ Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🏷️ Heading */
+.about-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-heading h1 {
+  color: rgb(39, 128, 60);
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.about-heading h2 {
+  color: #087108;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* 🧩 About Card */
+.about-card {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 50px 60px;
+  max-width: 900px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: justify;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.about-card p {
+  margin-bottom: 25px;
+}
+
+.about-card strong {
+  color: #087108;
+}
+
+/* 📊 Info Section */
+.about-info {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  background: #f3fdf3;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 128, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  background: #e9fbe9;
+  transform: scale(1.02);
+}
+
+.info-icon {
+  color: #087108;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.info-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* 📱 RESPONSIVENESS */
+@media (max-width: 992px) {
+  .about-container {
+    padding: 60px 6%;
+  }
+
+  .about-heading h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-heading h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-card {
+    padding: 40px 45px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-heading h1 {
+    font-size: 2rem;
+  }
+
+  .about-heading h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-card {
+    padding: 30px;
+    font-size: 0.95rem;
+  }
+
+  .info-item {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 40px 20px;
+  }
+
+  .about-heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-heading h2 {
+    font-size: 1rem;
+  }
+
+  .about-card {
+    padding: 25px;
+    font-size: 0.9rem;
+  }
+
+  .info-item {
+    padding: 12px 15px;
+  }
+
+  .info-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -510,7 +510,8 @@
 
   .footer-links {
     flex-direction: column;  /* stack items vertically */
-    align-items: center;     /* center them */
+    align-items: left;   
+    text-align: left;  /* center them */
     gap: 30px;
   }
   .footerPara {

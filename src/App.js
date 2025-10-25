@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from "react";
 import img from "../src/Data/IPMScoutek-logo.svg";
 import picture from "../src/Data/pexels-nc-farm-bureau-mark-2749165.jpg";
@@ -8,9 +7,15 @@ import app from "../src/Data/available.jpg";
 import footerlogo from "../src/Data/IPMScoutek-logo-white-480x97.webp";
 import Feature from "../src/Components/Feature";
 import About from "../src/Components/About";
+import Contact from "../src/Components/Contact"
+import Freq from "./Components/Frequent";
 import "./App.css";
 
 function HomePage({ onNavClick, navigate }) {
+  useEffect(() => {
+    document.title = "IPM Scoutek";
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
@@ -154,7 +159,9 @@ function App() {
         ) : route === "/blog" ? (
           <div className="page blog-page"><h1>Blog</h1></div>
         ) : route === "/contact" ? (
-          <div className="page contact-page"><h1>Contact</h1></div>
+          <Contact />
+        ) : route === "/faq" ? (
+          <Freq />
         ) : (
           <HomePage onNavClick={onNavClick} navigate={navigate} />
         )}

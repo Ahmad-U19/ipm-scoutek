@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import './About.css';
 import { Leaf, MapPin, Calendar, Cpu } from 'lucide-react';
+import awardImage from "../Data/awards.webp"
 
 function About() {
+  useEffect(() => {
+    document.title = "About | IPM Scoutek";
+  }, []);
+
   return (
     <div className="about-container">
       <div className="about-heading">
@@ -51,6 +56,19 @@ function About() {
             <p><strong>Focus:</strong> Integrated Pest Management (IPM) Software</p>
           </div>
         </div>
+
+        <h2>Achievements</h2>
+        <ul>
+          <li><h3>Green House Technology Award</h3>
+            <p>In <strong>2021</strong>, IPM Scoutek received the <strong>Greenhouse Technology Award</strong> in the <strong>Pest Management</strong> category for its innovative digital scouting and pest monitoring platform. The technology helps growers identify, track, and manage pests more efficiently using data-driven insights. This recognition highlighted IPM Scoutek’s contribution to advancing <strong>precision agriculture</strong> and promoting <strong>sustainable greenhouse management</strong> across Canada.</p>
+          </li>
+
+          <li><h3>Excellence in Agriculture Awards Honorable Mention</h3>
+            <p>In <strong>2022</strong>, IPM Scoutek was honored with an <strong>Honorable Mention</strong> in the <strong>Excellence in Agriculture Awards</strong> under the <strong>Innovation</strong> category. This accolade recognized IPM Scoutek’s cutting-edge software solutions that enhance pest management practices for greenhouse growers. The award highlighted the company’s commitment to driving innovation in agriculture through technology that supports sustainable and efficient farming methods.</p>
+          </li>
+        </ul>
+
+        <img className="awardImage" src={awardImage} alt="IPM Scoutek Awards" />
       </div>
     </div>
   );

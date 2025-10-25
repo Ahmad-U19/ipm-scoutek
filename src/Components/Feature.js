@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Components/Feature.css";
 import image1 from "../Data/626x0w.webp"
 import image2 from "../Data/2nd.webp"
@@ -7,6 +7,9 @@ import image4 from "../Data/dashboard.jpg"
 import image5 from "../Data/heatMaps.jpg"
 
 function Feature() {
+  useEffect(() => {
+    document.title = "Features | IPM Scoutek";
+  }, []);
   return (
     <div>
       <h1 className="heading">Features</h1>

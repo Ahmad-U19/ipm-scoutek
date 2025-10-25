@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/ipm-scoutek/static/css/main.0498f2a2.css",
-    "main.js": "/ipm-scoutek/static/js/main.061eb0da.js",
+    "main.css": "/ipm-scoutek/static/css/main.5395dcbc.css",
+    "main.js": "/ipm-scoutek/static/js/main.0e7ef5cb.js",
     "static/js/453.74915430.chunk.js": "/ipm-scoutek/static/js/453.74915430.chunk.js",
     "static/media/pexels-nc-farm-bureau-mark-2749165.jpg": "/ipm-scoutek/static/media/pexels-nc-farm-bureau-mark-2749165.bbe4185663afcaede58e.jpg",
     "static/media/heatMaps.jpg": "/ipm-scoutek/static/media/heatMaps.4939d41f3da61d3f9324.jpg",
+    "static/media/awards.webp": "/ipm-scoutek/static/media/awards.58050a83b23ca123103d.webp",
     "static/media/dashboard.jpg": "/ipm-scoutek/static/media/dashboard.162cc282261f2a93d78d.jpg",
     "static/media/NewPic.webp": "/ipm-scoutek/static/media/NewPic.ebb6b36ca8602639c2ad.webp",
     "static/media/scouting.jpg": "/ipm-scoutek/static/media/scouting.f407adac9bded219f343.jpg",
@@ -13,12 +14,12 @@
     "static/media/IPMScoutek-logo.svg": "/ipm-scoutek/static/media/IPMScoutek-logo.484742eb455c8bc58ce24fd67718dfe0.svg",
     "static/media/IPMScoutek-logo-white-480x97.webp": "/ipm-scoutek/static/media/IPMScoutek-logo-white-480x97.f672ffba41e45827e4e2.webp",
     "index.html": "/ipm-scoutek/index.html",
-    "main.0498f2a2.css.map": "/ipm-scoutek/static/css/main.0498f2a2.css.map",
-    "main.061eb0da.js.map": "/ipm-scoutek/static/js/main.061eb0da.js.map",
+    "main.5395dcbc.css.map": "/ipm-scoutek/static/css/main.5395dcbc.css.map",
+    "main.0e7ef5cb.js.map": "/ipm-scoutek/static/js/main.0e7ef5cb.js.map",
     "453.74915430.chunk.js.map": "/ipm-scoutek/static/js/453.74915430.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0498f2a2.css",
-    "static/js/main.061eb0da.js"
+    "static/css/main.5395dcbc.css",
+    "static/js/main.0e7ef5cb.js"
   ]
 }

@@ -9,6 +9,7 @@ import Feature from "../src/Components/Feature";
 import About from "../src/Components/About";
 import Contact from "../src/Components/Contact"
 import Freq from "./Components/Frequent";
+import Terms from "./Components/Terms";
 import "./App.css";
 
 function HomePage({ onNavClick, navigate }) {
@@ -143,7 +144,7 @@ function App() {
           <a href="#/" onClick={() => navigate("/")}>Home</a>
           <a href="#/features" onClick={() => navigate("/features")}>Features</a>
           <a href="#/about" onClick={() => navigate("/about")}>About</a>
-          <a href="#/blog" onClick={() => navigate("/blog")}>Blog</a>
+          <a href="#/faq" onClick={() => navigate("/faq")}>FAQ</a>
           <button id="quote" onClick={() => navigate("/contact")}>
             Request Demo
           </button>
@@ -156,12 +157,12 @@ function App() {
           <Feature />
         ) : route === "/about" ? (
           <About />
-        ) : route === "/blog" ? (
-          <div className="page blog-page"><h1>Blog</h1></div>
         ) : route === "/contact" ? (
           <Contact />
         ) : route === "/faq" ? (
           <Freq />
+        ) : route === "/terms" ? (
+          <Terms />
         ) : (
           <HomePage onNavClick={onNavClick} navigate={navigate} />
         )}
@@ -191,7 +192,7 @@ function App() {
               <h3>Resources</h3>
               <p><a href="#/faq" onClick={() => navigate("/faq")}>FAQ</a></p>
               <p><a href="#/features" onClick={() => navigate("/features")}>Features</a></p>
-              <p><a href="#/blog" onClick={() => navigate("/blog")}>News</a></p>
+              <p><a href="#/contact" onClick={() => navigate("/contact")}>Contact</a></p>
             </div>
 
             <div className="footer-column">

@@ -10,6 +10,8 @@ import About from "../src/Components/About";
 import Contact from "../src/Components/Contact"
 import Freq from "./Components/Frequent";
 import Terms from "./Components/Terms";
+import Privacy from "./Components/privacy";
+import Accessibility from "./Components/Accessibility";
 import "./App.css";
 
 function HomePage({ onNavClick, navigate }) {
@@ -163,6 +165,10 @@ function App() {
           <Freq />
         ) : route === "/terms" ? (
           <Terms />
+        ) : route === "/privacy" ? (
+          <Privacy />
+        ) : route === "/accessibility" ? (
+          <Accessibility />
         ) : (
           <HomePage onNavClick={onNavClick} navigate={navigate} />
         )}

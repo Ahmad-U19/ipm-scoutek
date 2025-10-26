@@ -6,10 +6,21 @@
   padding: 0;
 }
 
-.terms-banner {
-  background-color: #2f8f46;
-  padding: 80px 20px;
+ul li{
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: #2f8f46;
+}
+.terms-page h1{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #2f8f46;
   text-align: center;
+  margin: 40px 0;
 }
 
 .terms-heading {
